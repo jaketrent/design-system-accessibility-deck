@@ -1,0 +1,5 @@
+@import "@pluralsight/ps-design-system-core/css/index.css";
+
+.slide {
+  padding: var(--psLayoutSpacingMedium) var(--psLayoutSpacingLarge);
+}

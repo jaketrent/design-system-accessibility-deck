@@ -1,0 +1,10 @@
+@import "@pluralsight/ps-design-system-core/css/index.css";
+
+.nav {
+  position: fixed;
+  bottom: var(--psLayoutSpacingMedium);
+  right: var(--psLayoutSpacingMedium);
+}
+.nav > * + * {
+  margin-left: var(--psLayoutSpacingXSmall);
+}
