@@ -11,8 +11,6 @@ export default styleable(css)(props => (
       <h1>{props.title}</h1>
     </Text.Heading>
     <div className={props.css.titleBar} />
-    <div>prev: {props.prev}</div>
-    <div>next: {props.next}</div>
     <div>{props.children}</div>
     <Nav prev={props.prev} next={props.next} />
   </div>

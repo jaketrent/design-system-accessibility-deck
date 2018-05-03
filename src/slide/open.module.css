@@ -1,0 +1,26 @@
+@import "@pluralsight/ps-design-system-core/css/index.css";
+
+.open {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  position: relative;
+  display: block;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  margin-bottom: var(--psLayoutSpacingLarge);
+  font-weight: var(--psTypeFontWeightBold);
+}
+.titleBar {
+  height: 4px;
+  width: 50%;
+  background: var(--psColorsGradientHorz);
+}
+.subtitle {
+  display: block;
+  text-transform: uppercase;
+}
