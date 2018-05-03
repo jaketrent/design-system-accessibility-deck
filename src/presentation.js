@@ -13,7 +13,6 @@ const SlideRoute = props => (
 
 const Navigable = withRouter(props => {
   const currentI = parseInt(props.location.pathname.split('/').pop(), 10)
-  console.log('currentI', currentI)
   const arr = React.Children.toArray(props.children)
   return React.Children.map(props.children, (child, i) =>
     React.cloneElement(child, {
