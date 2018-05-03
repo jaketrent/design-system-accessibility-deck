@@ -3,12 +3,16 @@ import React from 'react'
 import Theme from '@pluralsight/ps-design-system-theme/react'
 
 import Nav from './nav'
+import PurposeSlide from './slide/purpose'
 import Slide from './slide'
 
 const slideUrl = props => `/${props.i}`
 
 const SlideRoute = props => (
-  <Route path={slideUrl(props)} render={_ => <Slide {...props} />} />
+  <Route
+    path={slideUrl(props)}
+    render={_ => props.children || <Slide {...props} />}
+  />
 )
 
 const Navigable = withRouter(props => {
@@ -37,9 +41,19 @@ export default class Presentation extends React.Component {
             title="Accessibility"
             subtitle="In the Design System"
           />
-          <SlideRoute title="Child">Here are things</SlideRoute>
 
-          <SlideRoute title="Parent 2" />
+          <SlideRoute
+            title="Design System Purposes"
+            list={[
+              'Common design language',
+              'Consistent UI',
+              'Increase speed and quality of work'
+            ]}
+          />
+
+          <SlideRoute>
+            <PurposeSlide />
+          </SlideRoute>
         </Navigable>
       </Theme>
     )

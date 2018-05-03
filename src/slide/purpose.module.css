@@ -1,0 +1,19 @@
+@import "@pluralsight/ps-design-system-core/css/index.css";
+.slide {
+  composes: slide from "./index.module.css";
+}
+.slide span {
+  color: var(--psColorsBlack);
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+.titleBar {
+  height: 4px;
+  width: 75%;
+  background: var(--psColorsGradientHorz);
+  margin-bottom: var(--psLayoutSpacingXLarge);
+}
+.item {
+  font-size: 2em;
+  line-height: 2.5em;
+}
